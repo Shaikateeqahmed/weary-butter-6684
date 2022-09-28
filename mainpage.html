@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+        crossorigin="anonymous"
+        ></script>
+    <style>
+        #navbar{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #navbar>div{
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #navbar>div>p{
+            color: gray;
+        }
+        #navbar>div>p:hover{
+          cursor: pointer;
+          color: #06aaf4;
+        }
+        #navbar>div>button{
+            border: 1px solid #06aaf4;
+            color: #06aaf4;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 15px;
+            border-radius: 5px;
+        }
+        #navbar>div>button:hover{
+            background-color:  #06aaf4;
+            color: white;
+            cursor: pointer;
+        }
+        #heading{
+            width: 60%;
+            margin: auto;
+            margin-top: 70px;
+            text-align: center;
+        }
+        #heading> p{
+            font-size: 50px;
+        }
+       #heading>p:nth-child(2){
+        text-align: center;
+        font-size: 25px;
+        width: 80%;
+        margin: auto;
+        margin-top: -25px;
+        color: gray;
+       }
+       #heading>div{
+        display: flex;
+       justify-content: center;
+       }
+       #heading>button{
+      
+        color: white;
+        background-color: #0288d1;
+        height: 60px;
+        border-radius: 5px;
+        border: 0px;
+        width: 40%;
+        font-size: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+       }
+     #heading>#a>p{
+        color:#0277bd;
+     }
+     #heading>#a>p:hover{
+        cursor: pointer;
+        text-decoration: underline  #0277bd;
+     }
+     #heading>button:hover{
+        cursor: pointer;
+        background-color: #0572ad;
+     }
+     #heading>#b>p{
+        color: gray;
+     }
+     #heading>#b>p:hover{
+        color: black;
+        cursor: pointer;
+     }
+     #video{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 120px;
+     }
+     #features{
+       
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        
+     }
+     #features > p:nth-child(1){
+        font-size: 45px;
+     }
+     #features > p:nth-child(2){
+        font-size: 28px;
+        color: gray;
+        margin-top: -25px;
+     }
+     #features1{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        margin-top: 120px;
+     }
+     #features1>div:nth-child(1)>p{
+        margin-top: -20px;
+     }
+     #features1>div:nth-child(1)>h3{
+        color: #83949c;
+     }
+     #features1>div:nth-child(1)>h4:hover{
+        cursor: pointer;
+        color:  #06aaf4;
+        
+     }
+     
+     #features2{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        margin-top: 120px;
+     }
+     #features2>div>p{
+        margin-top: -20px;
+     }
+     #features2>div>h3{
+        color: #83949c;
+     }
+     #features2>div:nth-child(2)>h4:hover{
+        cursor: pointer;
+        color:  #06aaf4;
+        
+     }
+     #features3{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        margin-top: 120px;
+     }
+     #features3>div:nth-child(1)>p{
+        margin-top: -20px;
+     }
+     #features3>div:nth-child(1)>h3{
+        color: #83949c;
+     }
+     #features3>div:nth-child(1)>h4:hover{
+        cursor: pointer;
+        color:  #06aaf4;
+        
+     }
+    #btnfeatures{
+        width: 25%;
+        color: white;
+        background-color: #03a9f4;
+      height: 60px;
+      font-size: 25px;
+      border-radius: 5px;
+      border: 0px;
+      margin-top: 100px;
+     margin-left: 37%;
+    }
+    #btnfeatures:hover{
+       cursor: pointer;
+       background-color: #0572ad;
+
+    }
+    #appsheading{
+       
+       width: 50%;
+       margin: auto;
+       text-align: center;
+      margin-top: 150px;
+    }
+    #appsheading > p:nth-child(1){
+       font-size: 45px;
+    }
+    #appsheading > p:nth-child(2){
+       font-size: 28px;
+       color: gray;
+       margin-top: -25px;
+    }
+    #apps1{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #apps1>div{
+        text-align: center;
+    }
+    #apps1>div>div{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   gap: 10px;
+    }
+    #apps1>div>div>button{
+        color: #51adf5;
+        background-color: white;
+        border: 1px solid #51adf5;
+        width: 20%;
+        padding: 10px;
+    }
+    #apps1>div>div>button:hover{
+        cursor: pointer;
+      background-color:  #51adf5;
+      color: white;
+    }
+    #apps2{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 120px;
+    }
+    #apps2>div{
+        text-align: center;
+    }
+    #apps2>div>div{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   gap: 10px;
+    }
+    #apps2>div>div>button{
+        color: #51adf5;
+        background-color: white;
+        border: 1px solid #51adf5;
+        width: 20%;
+        padding: 10px;
+    }
+    #apps2>div>div>button:hover{
+        cursor: pointer;
+      background-color:  #51adf5;
+      color: white;
+    }
+    #why{
+       
+       width: 40%;
+       margin: auto;
+       text-align: center;
+      margin-top: 150px;
+      font-size: 45px;
+    }
+    #why1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap: 70px;
+        width: 60%;
+        margin: auto;
+       
+    }
+    #why1>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    #why1>div>p:nth-child(2){
+        font-size: 28px;
+    }
+    #why1>div>p:nth-child(3){
+        font-size: 20px;
+        color: gray;
+    }
+    #why1>div>p:nth-child(4){
+        color:#03a9f4;
+    }
+    #why2{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+       
+    }
+    #why2>div{
+     width: 70%;
+   
+     display: flex;
+     justify-content: center;
+     gap: 25px;
+     margin: auto;
+    }
+    #why2>div>button{
+        width: auto;
+        height: 40px;
+        background-color: white;
+        color: gray;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    #why2>div>button:hover{
+        color: #03a9f4;
+        border: 1px solid  #03a9f4;
+        cursor: pointer;
+    }
+    #zero{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin: auto;
+        margin-top: 150px;
+    }
+    #zero>div>p:nth-child(1){
+        font-size: 80px;
+        color: #03a9f4;
+        margin-bottom: -25px;
+    }
+    #zero>div>p:nth-child(2){
+        font-size: 40px;
+        color: #03a9f4;
+        margin-top: -25px;
+    }
+    #zero>div>p:nth-child(6){
+        color: #03a9f4;
+    }
+    #zero>div>p:nth-child(6):hover{
+        cursor: pointer;
+        text-decoration: underline #03a9f4;
+    }
+    #blue{
+        background-color: #f7fcff;
+    }
+    #cs{
+        width: 50%;
+        margin: auto;
+        margin-top: 150px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    #cs>p:nth-child(1){
+        color: gray;
+        
+    }
+    #cs>p:nth-child(2){
+        margin-top: -20px;
+        font-size: 50px;
+        margin-bottom: -20px;
+    }
+    #cs>p:nth-child(3){
+        font-size: 25px;
+        color: gray;
+    }
+    #cs>div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #cs>div>div{
+        display: flex;
+        justify-content: center;
+       
+    }
+    #cs>div>div>div>img{
+    margin-top: 30px;
+    }
+    #cs>div>div>div>h1{
+        margin-bottom: -25px;
+    }
+    #cs>div>div>div>p{
+        color: gray;
+    }
+    #cs>button{
+        width: 20%;
+        height: 40px;
+        color: #03a9f4;
+        border: 1px solid #03a9f4;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    #cs>button:hover{
+        color:white;
+        background-color: #03a9f4;
+        cursor: pointer;
+    }
+    #cs>p:nth-child(6){
+        font-size: 12px;
+        color: gray;
+    }
+    #join{
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #join>p:nth-child(1){
+        color: gray;
+    }
+    #join>p:nth-child(2){
+        margin-top: -15px;
+        font-size: 50px;
+        margin-bottom: -15px;
+    }
+    #join>p:nth-child(3){
+        font-size: 30px;
+        color: gray;
+    }
+    hr{
+        color: gray;
+    }
+    #joinm{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 20px;
+        text-align: left;
+       margin-top: 30px;
+    }
+    #joinm>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    #start{
+        width: 100%;
+        text-align: center;
+       padding-top: 100px;
+       padding-bottom: 100px;
+       background-color: #f7fcff;
+    }
+    #start>p:nth-child(1){
+        font-size: 40px;
+    }
+    #start>pre:nth-child(2){
+     font-size: 15px;
+     color: gray;
+     margin-bottom: 50px;
+    }
+    #start>button{
+        width: 20%;
+        height: 50px;
+        background-color: #0288d1;
+        color: white;
+        font-size: 15px;
+        border: 0px;
+        border-radius: 5px;
+    }
+    #start>button:hover{
+       cursor: pointer;
+    }
+    #start>div{
+        display: flex;
+        justify-content: center;
+    }
+    #start>div>p{
+        color:#0288d1 ;
+    }
+    #start>div>p:hover{
+        cursor: pointer;
+        text-decoration: underline #0288d1;
+    }
+    #footer{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: auto;
+        color: gray;
+        padding-top: 100px;
+    }
+    #footer>div:nth-child(1){
+        width: 20%;
+    }
+    #footer>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap:70px;
+    }
+    #footer>div:nth-child(2)>div>p:hover{
+     cursor: pointer;
+     color: #0288d1;
+     
+    }
+    #footer>div:nth-child(1)>h5:hover{
+     color: #0288d1;
+     cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://clockify.me/assets/images/clockify-logo.svg" alt="">
+            <p>FEATURES</p>
+            <p>DOWNLOAD</p>
+        </div>
+        <div>
+            <p>LOG IN </p>
+            <button>SIGN UP FREE</button>
+        </div>
+    </div>
+    <div id="heading">
+        <p>The most popular free time tracker for teams</p>
+        <p>Time tracking software used by millions. Clockify is a time tracker and 
+            timesheet app that lets you track work hours across projects.
+             Unlimited users, free forever.</p>
+        <div id="b"><img src="https://clockify.me/assets/images/stars-small.svg" alt=""><p>4,000+ Reviews</p></div>
+        <button>START TRACKING TIME-ITS FREE!</button>
+        <div id="a"><img src="https://clockify.me/assets/images/signed-up-icon.svg" alt=""><p>147,326 People singed up last month</p></div>
+    </div>
+    <div id="video">
+        <img src="https://clockify.me/assets/images/customers-light-gray-3.svg" alt="">
+        
+        <a href="https://www.youtube.com/embed/NMZhFs_b0Aw"><img src="https://clockify.me/assets/images/time-tracker-screenshot.svg" alt=""></a>
+    </div>
+
+    <div id="features">
+        <p>Time management features</p>
+        <p>Track productivity, attendance, and billable hours with a simple time tracker and timesheet.</p>
+    </div>
+
+    <div id="features1">
+        <div>
+            <h3>TIMEKEEPING</h3>
+            <h4>Timer</h4>
+            <p>Track work hours in real time.</p>
+            <h4>Timesheet</h4>
+            <p>Enter time in weakly timesheet.</p>
+            <h4>Calander</h4>
+            <p>Visaully block out and manage time.</p>
+            <h4>Auto tracker</h4>
+            <p>Track app and wibsites you see.</p>
+            <h4>Kiosk</h4>
+            <p>Clock in from a shared device</p>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/feature-time-tracker-methods.svg" alt="">
+        </div>
+    </div>
+    <div id="features2">
+        <div>
+            <img src="https://clockify.me/assets/images/feature-time-reporting-activity.svg" alt="">
+        </div>
+        <div>
+            <h3>REPORTIN</h3>
+            <h4>Reports</h4>
+            <p>Analyze and export track time.</p>
+            <h4>Activity</h4>
+            <p>See how works on what.</p>
+            <h4>Rates</h4>
+            <p>See earning, cost and profit.</p>
+            <h4>Progress</h4>
+            <p>Track project estimate and budget.</p>
+            <h4>Location</h4>
+            <p>See visited sites and routes.</p>
+        </div>
+    </div>
+    <div id="features3">
+        
+        <div>
+            <h3>MANAGEMENT</h3>
+            <h4>Scheduling</h4>
+            <p>Schedule work, assignment and shifts.</p>
+            <h4>Timeoff</h4>
+            <p>Manage leaves and holidays.</p>
+            <h4>Appoval</h4>
+            <p>Submit and approve timesheet.</p>
+            <h4>Invoicing</h4>
+            <p>Create invoice from billable time.</p>
+            <h4>Expenses</h4>
+            <p>Record project expenses and fees.</p>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/feature-team-scheduling.svg" alt="">
+        </div>
+        
+    </div>
+    <button id="btnfeatures">SEE ALL FEATURES</button>
+<div id="blue">
+    <div id="appsheading">
+        <p>Time tracking apps</p>
+        <p>Clockify works across devices. Track time from anywhere — all data is synced online.</p>
+    </div>
+    <div id="apps1">
+      <div>
+        <img src="https://clockify.me/assets/images/time-tracking-app-desktop.png" alt="">
+        <h4>DESKTOP APP</h4>
+        <div>
+            <button>Windows</button>
+            <button>Mac</button>
+            <button>Linux</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://clockify.me/assets/images/time-tracking-app-web.png" alt="">
+        <h4>WEB APP</h4>
+        <div>
+            <button>Edge</button>
+            <button>Chrome</button>
+            <button>Firefox</button>
+        </div>
+      </div>
+    </div>
+    <div id="apps2">
+        <div>
+          <img src="https://clockify.me/assets/images/time-tracking-app-mobile.png" alt="">
+          <h4>MOBILE APP</h4>
+          <div>
+              <button>Windows</button>
+              <button>Mac</button>
+              
+          </div>
+        </div>
+        <div>
+          <img src="https://clockify.me/assets/images/time-tracking-app-kiosk.png" alt="">
+          <h4>KIOSK APP</h4>
+          <div>
+              <button>Edge</button>
+          </div>
+        </div>
+      </div>
+</div>
+    
+      <div id="why">
+        <p>Why track time with Clockify</p>
+      </div>
+
+      <div id="why1">
+        <div> <i class="fa-solid fa-circle-dollar"></i>
+        <p>Boost productivity</p>
+        <p>Track time you spend on activities, See where your time goes and improve your time management skills.</p>
+        <p>Learn more<i class="fa-thin fa-arrow-right"></i></p>
+        </div>
+        <div>
+        <img src="https://clockify.me/why-use-time-tracker#billing" alt="">
+        <p>Bill clients</p>
+        <p>Track billable time and expenses, show clients how much you've word, see howmuch you've earned Create invoices.</p>
+        <p>Learn more</p>
+        </div>
+        <div>
+        <img src="https://clockify.me/why-use-time-tracker#team-management" alt="">
+        <p>Manage team</p>
+        <p>Track attendance for pay roll and according, see who works on what and manage workload amoung team.</p>
+        <p>Learn more</p>
+        </div>
+        <div>
+        <img src="https://clockify.me/why-use-time-tracker#business-intelligence" alt="">
+        <p>Business intelligence</p>
+        <p>Track time and analyze your companies efficency accrose projects,clients,departments and employees.</p>
+        <p>Learn more</p>
+         </div>
+      </div>
+      <div id="why2">
+        <p>MORE USE CASES</p>
+        <div>
+            <button>Time Clock</button>
+            <button>Work Hours Tracker</button>
+            <button>Employee Time Tracker</button>
+            <button>Attendance Tracker</button>
+            <button>Task Timer</button>
+            <button>Time Card Calculator</button>
+        </div>
+      </div>
+      <div id="blue">
+        <div id="zero">
+            <div>
+                <img src="https://clockify.me/assets/images/free-forever-clock-4.svg" alt="">
+              </div>
+              <div>
+                <p>FREE</p>
+                <p>FOREVER!</p>
+                <p>✓  Unlimited users</p>
+                <p>✓  Unlimited tracking</p>
+                <p>✓  Unlimited projects</p>
+                <p>Upgrade <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+          </div>
+    </div>
+
+    <div id="cs">
+        <p>#1 SUPPORT IN SOFTWARE</p>
+        <p>World-class customer support</p>
+        <p>We're here 24 hours a day, every day of the week, including holidays.</p>
+        <div>
+            <div>
+                <div>
+                    <img src="https://clockify.me/assets/images/support-phone.svg" alt="">
+                </div>
+                <div>
+                    <h1>24/7</h1>
+                    <p>support anytime, anywhere</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <img src="https://clockify.me/assets/images/support-mail.svg" alt="">
+                </div>
+                <div>
+                    <h1>1h</h1>
+                    <p>average response time</p>
+                </div>
+            </div>
+           
+            <div>
+                <div>
+                    <img src="https://clockify.me/assets/images/support-heart.svg" alt="">
+                </div>
+                <div>
+                    <h1>95%</h1>
+                    <p>satisfaction score (12k+ ratings)</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <img src="https://clockify.me/assets/images/support-uptime.svg" alt="">
+                </div>
+                <div>
+                    <h1>99.99%</h1>
+                    <p>highest uptime levels</p>
+                </div>
+            </div>
+            
+        </div>
+        <button>Contact Us</button>
+        <p>EMAIL • PHONE • CHAT</p>
+    </div>
+    <hr>
+    <div id="join">
+        <p>#1 RATED SOFTWARE</p>
+        <p>Join millions of happy users</p>
+        <p>Clockify is the best rated time tracking software with 4,000+ reviews.</p>
+        <img src="https://clockify.me/assets/images/customer-feedback-logo-expanded-3.svg" alt="">
+        <div id="joinm">
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Greet experience</h3>
+                <p>It has realy help me become more organised.</p>
+                <i>-Lauren Leonard, Illustrator</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>A game-changer for remote work</h3>
+                <p>I can track on myphoe-a few taps and I'm ready to get into my work.</p>
+                <i>-Kerri Mackey, Coordinitor</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>It has greatly improved our business</h3>
+                <p>Before Clockify we had no idea of how long we ware spending on each other.</p>
+                <i>-Hilary Racride, Executive Assistant</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Grows with you!</h3>
+                <p>I love how Clockify allows my contractors to independently log billable hours.</p>
+                <i>-Cameron Soursa, Enterpreneur</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>One of the best value avalaible online</h3>
+                <p>Realy good. Overall, this is a TREMENDOUS value for the price.</p>
+                <i>-Patrick Corver, Enterpreneur</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Best time tracker</h3>
+                <p>Clockify has become a basic in my set of freelance tools</p>
+                <i>-Luis Miguel Rivas Zepeda, software Engineer</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Seamless time tracking</h3>
+                <p>Clockify is so easy to use and intuitive.The learning curve is almost none.</p>
+                <i>-Sheila Zayas,Graphic Desing</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Clockify is scary good!</h3>
+                <p>It is power full and often fightening insight into your own behavior.</p>
+                <i>-Skyler Bird, Web Desinger</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Works great for standups</h3>
+                <p>We grew from a couple people to almost 80 and it worked perfectly the whole time!</p>
+                <i>-Zachary Gaskill, Sales Manager</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Fantastic</h3>
+                <p>Makes it incredibly easy to record time and attach pdf reports to invoices</p>
+                <i>-David Jackson, Consultant</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Best time tracking software!</h3>
+                <p>I use Clockify for work, but it also let me know exactly what i am doing in my day!</p>
+                <i>-Mac Wolfe, Marketing Manager</i>
+            </div>
+            <div>
+                <img src="https://clockify.me/assets/images/stars-small.svg" alt="">
+                <h3>Best timesheet software in the market</h3>
+                <p>Easy to use. Quick to maneuver. Excellent reporting and administration</p>
+                <i>-Anurag K, Database Engineer</i>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="start" >
+        <p>Start tracking time with Clockify</p>
+        <pre>24/7 Support     •     Cancel Anytime     •      Free Forever</pre>
+        <button>CREATE FREE ACCOUNT</button>
+        <div>
+            <img src="https://clockify.me/assets/images/signed-up-icon.svg" alt=""><p>147,326 People singed up last month</p>
+        </div>
+    </div>
+
+    <div id="footer">
+     <div><img src="https://clockify.me/assets/images/clockify-logo.svg" alt="">
+    <p>The world's leading time tracker and timesheet software for teams</p>
+    <h5>SING UP FREE</h5>
+    <h5>LOGIN</h5>
+    </div>
+     <div>
+        <div>
+            <h4>PRODUCT</h4>
+            <p>Features</p>
+            <p>Download</p>
+            <p>Integrations</p>
+            <p>Update</p>
+            <p>API</p>
+        </div>
+        <div>
+            <h4>SOLUTION</h4>
+            <p>Timekeeping</p>
+            <p>Management</p>
+            <p>Reporting</p>
+            <p>Business</p>
+            <p>Calculator</p>
+        </div>
+        <div>
+            <h4>COMPANY</h4>
+            <p>About us</p>
+            <p>Customers</p>
+            <p>we also make</p>
+            <p><img src="https://clockify.me/assets/images/pumble-icon-color.svg" alt="">Pumble</p>
+            <p><img src="https://clockify.me/assets/images/plaky-icon-color.svg" alt="">Plaky</p>
+        </div>
+        <div>
+            <h4>SUPPORT</h4>
+            <p>Help</p>
+            <p>Tutorials</p>
+            <p>Resources</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+     </div>
+    </div>
+</body>
+</html>
+

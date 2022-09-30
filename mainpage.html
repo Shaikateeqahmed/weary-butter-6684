@@ -36,7 +36,7 @@
             cursor: pointer;
           color: #06aaf4;
         }
-        #navbar>div>button{
+        #navbar>div>a>button{
             border: 1px solid #06aaf4;
             color: #06aaf4;
             background-color: white;
@@ -45,11 +45,14 @@
             align-items: center;
             padding: 0px 15px;
             border-radius: 5px;
+            text-decoration: underline white;
+            padding: 15px;
         }
-        #navbar>div>button:hover{
+        #navbar>div>a>button:hover{
             background-color:  #06aaf4;
             color: white;
             cursor: pointer;
+            text-decoration: underline #06aaf4;
         }
         #heading{
             width: 60%;
@@ -72,7 +75,7 @@
         display: flex;
        justify-content: center;
        }
-       #heading>button{
+       #heading>a>button{
       
         color: white;
         background-color: #0288d1;
@@ -91,7 +94,7 @@
         cursor: pointer;
         text-decoration: underline  #0277bd;
      }
-     #heading>button:hover{
+     #heading>a>button:hover{
         cursor: pointer;
         background-color: #0572ad;
      }
@@ -460,7 +463,7 @@
      color: gray;
      margin-bottom: 50px;
     }
-    #start>button{
+    #start>a>button{
         width: 20%;
         height: 50px;
         background-color: #0288d1;
@@ -469,7 +472,7 @@
         border: 0px;
         border-radius: 5px;
     }
-    #start>button:hover{
+    #start>a>button:hover{
        cursor: pointer;
     }
     #start>div{
@@ -506,9 +509,13 @@
      color: #0288d1;
      
     }
-    #footer>div:nth-child(1)>h5:hover{
+    #footer>div:nth-child(1)>a>h5:hover{
      color: #0288d1;
      cursor: pointer;
+    }
+    #footer>div:nth-child(1)>a>h5{
+        color: gray;
+        text-decoration: underline white;
     }
     @media all and (min-width:700px) and (max-width:1100px){
         #apps1{
@@ -569,7 +576,7 @@
         </div>
         <div>
             <p>LOG IN </p>
-            <button>SIGN UP FREE</button>
+           <a href="./singup.html" target=""><button>SIGN UP FREE</button></a> 
         </div>
     </div>
     <div id="heading">
@@ -578,7 +585,7 @@
             timesheet app that lets you track work hours across projects.
              Unlimited users, free forever.</p>
         <div id="b"><img src="https://clockify.me/assets/images/stars-small.svg" alt=""><p>4,000+ Reviews</p></div>
-        <button>START TRACKING TIME-ITS FREE!</button>
+        <a href="./singup.html" target=""><button>START TRACKING TIME-ITS FREE!</button></a>
         <div id="a"><img src="https://clockify.me/assets/images/signed-up-icon.svg" alt=""><p>147,326 People singed up last month</p></div>
     </div>
     <div id="video">
@@ -648,7 +655,7 @@
         </div>
         
     </div>
-    <button id="btnfeatures">SEE ALL FEATURES</button>
+    <a href="https://clockify.me/feature-list" target=""><button id="btnfeatures">SEE ALL FEATURES</button></a>
 <div id="blue">
     <div id="appsheading">
         <p>Time tracking apps</p>
@@ -885,7 +892,7 @@
     <div id="start" >
         <p>Start tracking time with Clockify</p>
         <pre>24/7 Support     •     Cancel Anytime     •      Free Forever</pre>
-        <button>CREATE FREE ACCOUNT</button>
+        <a href="./singup.html" target=""><button>CREATE FREE ACCOUNT</button></a>
         <div>
             <img src="https://clockify.me/assets/images/signed-up-icon.svg" alt=""><p>147,326 People singed up last month</p>
         </div>
@@ -894,7 +901,7 @@
     <div id="footer">
      <div><img src="https://clockify.me/assets/images/clockify-logo.svg" alt="">
     <p>The world's leading time tracker and timesheet software for teams</p>
-    <h5>SING UP FREE</h5>
+    <a href="./singup.html" target=""><h5>SING UP FREE</h5></a>
     <h5>LOGIN</h5>
     </div>
      <div>

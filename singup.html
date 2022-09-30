@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SING UP PAGE</title>
+    <style>
+        body{
+            background-color: #f2f6f8;
+        }
+        #navbarsingup{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #navbarsingup>a>p{
+            color: #03a9f4;
+            text-decoration: underline white;
+        }
+        #navbarsingup>a>p:hover{
+            cursor: pointer;
+            text-decoration: underline  #03a9f4;
+        }
+        #headingsingup{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        #headingsingup > p:nth-child(1){
+            font-size: 40px;
+            margin-bottom: -5px;
+        }
+        #headingsingup > p:nth-child(2){
+            font-size: 20px;
+            color: #727478;
+        }
+        #headingsingup > p:nth-child(3){
+            color: gray;
+        }
+        #singupform{
+            width: 20%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 25px;
+            background-color: white;
+        }
+        #singupform > input{
+            width: 90%;
+            height: 30px;
+            padding-left: 10px;
+        }
+        #singupform>div{
+            display: flex;
+            gap: 5px;
+            font-size: 18px;
+        }
+        #singupform>div>p:nth-child(3){
+            color:#03a9f4 ;
+        }
+        #singupform>div>p:nth-child(3):hover{
+            text-decoration: underline #03a9f4;
+        }
+        #singupform>div:hover{
+            cursor: pointer;
+        }
+        #singupform>button{
+            width: 100%;
+            color: white;
+            background-color: #03a9f4;
+            border: 0px;
+            height: 40px;
+            font-size: 15px;
+        }
+        #singupform>p{
+            text-align: center;
+        }
+        #singupform>div:nth-child(10){
+            border: 1px solid gray;
+            padding-left: 10px;
+        }
+        #singupform>div:nth-child(10)>p{
+            margin-left: 40px;
+            color: #727478;
+        }
+        #singupform>div:nth-child(10):hover{
+             background-color: lightgray;
+        }
+        #eng{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+        }
+        #eng:hover{
+            cursor: pointer;
+        }
+        #security{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+        }
+        #security>p:nth-child(3){
+            color: #03a9f4;
+        }
+        #security>p:nth-child(3):hover{
+            cursor: pointer;
+            text-decoration: underline #03a9f4;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarsingup">
+        <img src="https://app.clockify.me/assets/logo.svg" alt="">
+        <a href="./login.html" target=""><p>Log In</p></a>
+    </div>
+    <div id="headingsingup">
+        <p>Get started with Clockify</p>
+        <p>Create a free account to start tracking time and supercharge your productivity.</p>
+        <p>No credit card required · Unsubscribe at any time</p>
+    </div>
+    <div id="singupform">
+        <h3>Sing Up</h3>
+        <input id="email" type="email" placeholder="Enter email"><br><br>
+        <input id="password" type="password" placeholder="Choose password"><br>
+        <div>
+            <input type="checkbox" id="checkbox"><p>I agree to the </p><p> Terms of Use</p>
+        </div>
+        <button id="btn">CREATE FREE ACCOUNT</button>
+        <P>OR</P>
+        <div>
+            <img src="https://app.clockify.me/assets/ui-icons/icon-google.svg" alt="">
+            <p>Continue with Google</p>
+        </div>
+    </div>
+    <div id="eng">
+        <img src="https://app.clockify.me/assets/ui-icons/translate.svg" alt="">
+        <p>English</p>
+    </div>
+    <div id="security">
+        <img src="https://app.clockify.me/assets/ui-icons/safe.svg" alt="">
+        <p>Your data is safe with us:</p>
+        <p>Security Privacy</p>
+    </div>
+</body>
+</html>
+
+<script>
+     document.querySelector("#btn").addEventListener("click",createac);
+     function createac(){
+        let email=document.querySelector("#email").value;
+        let password=document.querySelector("#password").value;
+
+        if(email!==""&&password!==""){
+            localStorage.setItem("email",email);
+            localStorage.setItem("password",password);
+        }
+        if(email===""&&password===""){
+            alert("Please fill the requred fields");
+        }else if(email===""){
+            alert("Please Enter the Email");
+        }else if(password===""){
+            alert("Please Enter the Password");
+        }
+        document.querySelector("#email").value="";
+        document.querySelector("#password").value="";
+     }
+ 
+</script>

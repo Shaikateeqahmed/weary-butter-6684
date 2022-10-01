@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN PAGE</title>
+    <style>
+        
+        #main{
+            width: 70%;
+            background-color: #f2f6f8;
+        }
+        #loginnavbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #loginnavbar>div{
+           display: flex;
+           justify-content: center;
+           gap: 5px;
+        }
+        #loginnavbar>div>p:nth-child(1){
+            color: gray;
+        }
+        #loginnavbar>div>a>p:nth-child(1){
+            color: #03a9f4;
+            text-decoration: underline white;
+        }
+        #loginnavbar>div>a>p:nth-child(1):hover{
+            cursor: pointer;
+            text-decoration: underline #03a9f4;
+        }
+        #formlogin{
+            width: 28%;
+            margin: auto;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 100px;
+            padding-bottom: 50px;
+            background-color: white;
+        }
+        #formlogin>input{
+            width: 95%;
+            height: 30px;
+            padding-left: 5px;
+        }
+        #formlogin>div{
+            display: flex;
+            
+        }
+        #formlogin>div:nth-child(7)>p:nth-child(3){
+            color: #24b4f5;
+            margin-left: 40px;
+        }
+        #formlogin>div:nth-child(7):hover{
+            cursor: pointer;
+        }
+        #formlogin>div:nth-child(7)>p:nth-child(3):hover{
+            text-decoration: underline #24b4f5;
+        }
+        #formlogin>button{
+            width: 100%;
+            border: 0px;
+            height: 35px;
+            background-color: #5cc7f8;
+            color: white;
+            font-size: 15px;
+        }
+        #formlogin>p{
+            text-align: center;
+        }
+        #formlogin>div:nth-child(10){
+            display: flex;
+            width: 95%;
+            height: 35px;
+            padding-left: 10px;
+            border: 1px solid gray;
+        }
+        #formlogin>div:nth-child(10)>p{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            color: gray;
+        }
+        #formlogin>div:nth-child(10):hover{
+            cursor: pointer;
+            background-color: lightgray;
+        }
+        #engL{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+            margin-top: 70px;
+        }
+        #engL:hover{
+            cursor: pointer;
+        }
+        #securityL{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+        }
+        #securityL>p:nth-child(3){
+            color: #03a9f4;
+        }
+        #securityL>p:nth-child(3):hover{
+            cursor: pointer;
+            text-decoration: underline #03a9f4;
+        }
+        #continer{
+            display: flex;
+
+        }
+        #right{
+            padding: 20px;
+            background-color: #3168bc;
+            text-align: center;
+            color: white;
+            width: 35%;
+        }
+        #right>p:nth-child(2){
+            font-size: 45px;
+            margin-top: -2px;
+        }
+        #right>p:nth-child(3){
+            font-size: 25px;
+        }
+        #right>img{
+            width: 100%;
+        }
+        #right>button:nth-child(4){
+            height: 40px;
+            background-color:#333333;
+            color: white;
+            border: 0px;
+            margin-bottom: 50px;
+        }
+        #right>button:nth-child(4):hover{
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="continer">
+        <div id="main">
+            <div id="loginnavbar">
+                <img src="https://app.clockify.me/assets/logo.svg" alt="">
+                <div><p>Don't have an account?</p>
+               <a href="./singup.html" target=""> <p>Sing Up</p></a></div>
+            </div>
+            <div id="formlogin">
+                <h2>Log In</h2>
+                <input id="emaillogin" type="email" placeholder="Enter Email"><br><br>
+                <input id="passwordlogin" type="password" placeholder="Enter password"><br>
+                <div>
+                    <input type="checkbox"><p>Stay logged in</p><p>Forgot password?</p>
+                </div>
+                <button id="btnlogin">LOG IN</button>
+                <p>OR</p>
+                
+                <div>
+                    <img src="https://app.clockify.me/assets/ui-icons/icon-google.svg" alt="">
+                    <p>Continue with Google</p>
+                </div>
+
+            </div>
+            <div id="engL">
+                <img src="https://app.clockify.me/assets/ui-icons/translate.svg" alt="">
+                <p>English</p>
+            </div>
+            <div id="securityL">
+                <img src="https://app.clockify.me/assets/ui-icons/safe.svg" alt="">
+                <p>Your data is safe with us:</p>
+                <p>Security Privacy</p>
+            </div>
+    </div>
+    <div id="right">
+       <button>NEW</button>
+       <p>Scheduling</p>
+       <p>Visualize projects on a timeline and plan team's capacity (see who's busy and who's available).</p>
+       <button>SEE HOW IT WORKS</button>
+       <img src="https://app.clockify.me/assets/features-info/scheduling-promo.webp" alt="">
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+document.querySelector("#btnlogin").addEventListener("click", log);
+
+function log(){
+    let emaillogin=document.querySelector("#emaillogin").value;
+    let passwordlogin=document.querySelector("#passwordlogin").value;
+
+    if(emaillogin!==""&&passwordlogin!==""){
+        localStorage.setItem("emaillogin", emaillogin);
+        localStorage.setItem("passwordlogin",passwordlogin);
+    }
+    if(emaillogin===""&&passwordlogin===""){
+        alert("Please fill the requred fields");
+    }else if(emaillogin===""){
+        alert("Please Enter a Email");
+    }else if(passwordlogin===""){
+        alert("Please fill a Password")
+    }
+
+    let x=localStorage.getItem("email")
+    let x1=localStorage.getItem("emaillogin");
+    let y=localStorage.getItem("password");
+    let y1=localStorage.getItem("passwordlogin");
+
+    if(x===x1&&y===y1&& emaillogin!==""&& passwordlogin!==""){
+        alert("Login Successfully");
+    }else if(x!==x1&&y!==y1 && emaillogin!==""&& passwordlogin!==""){
+        alert("Invalid Email ID and Wrong Password!");
+    } else if(x!==x1&&emaillogin!==""){
+        alert("Invalid Email ID!");
+    }else if(y!==y1&&passwordlogin!==""){
+        alert("Worng Password!");
+    }
+    document.querySelector("#emaillogin").value="";
+    document.querySelector("#passwordlogin").value="";
+}
+    
+    
+</script>
